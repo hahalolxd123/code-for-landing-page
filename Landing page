@@ -1,0 +1,106 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './LandingPage.css'; // Import CSS file for styling
+
+const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/LoginSignup');
+  };
+
+  return (
+    <div>
+      <nav className="navbar">
+        <div className="heading">StockDash: "An Inventory Management Soution"</div>
+        
+        <ul className="nav-links">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><button className="button" onClick={handleClick}>Go to Login/Signup</button></li>
+        </ul>
+      </nav>
+
+      {/* Side navigation bar */}
+      <div className="sideNavigationBar" id="sideNavigationBar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+      </div>
+
+      {/* Content */}
+      <div className="container">
+        <div className="content-wrapper">
+          <div className="intro">
+          
+            
+          </div>
+          <div className="image-wrapper">
+            <img src="https://yourinventorysystem.com/images/logo.png" width="500" alt="" />
+          </div>
+        </div>
+      </div>
+
+      {/* About section */}
+      <section className="about" id="MyProjects">
+        <div className="content">
+          <div className="boxes">
+            <div className="box">
+              <h3>PRODUCTS</h3>
+              <p>Easily manage your product inventory, streamline your distribution process and simplify store management with StockDash.</p>
+            </div>
+            <div className="box">
+              <h3>ADMIN</h3>
+              <p>With advanced user management features, comprehensive reporting tools, and customizable settings, the Admin module empowers administrators to oversee all aspects of the system.</p>
+            </div>
+            <div className="box">
+              <h3>ORDERS</h3>
+              <p>From capturing customer orders to tracking delivery status, this module offers a seamless workflow for managing orders efficiently.</p>
+            </div>
+            <div className="box">
+              <h3>STORE</h3>
+              <p>Easily add, edit, or remove store details, including addresses, contact information, and operating hours. Assign and manage staff members, keep track of staff performance, attendance and productivity.</p>
+            </div>
+            <div className="box">
+              <h3>MONITOR</h3>
+              <p>Gain actionable insights into product performance, inventory levels, sales trends, and customer behavior through interactive dashboards and customizable reports. Monitor key metrics such as inventory turnover, stockouts and overall data.</p>
+            </div>
+            <div className="box">
+              <h3>CUSTOMERS</h3>
+              <p>Easily store and access customer details, including contact information, purchase history, preferences, and interactions. Streamline customer communication through integrated support channels, such as email and phone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact section */}
+      <section className="contact" id="contact">
+        <div className="content">
+          <div className="contact-info">
+            <h3>Contact Us</h3>
+            <p>Carmel College of Engineering & Technology</p>
+<p>Punnapra | Alappuzha-688004, Kerala</p>
+<p>Ph : 0477 2287248, 2287240, 8330807240</p>
+<p>Email: office@carmelcet.in | www.carmelcet.in</p>
+            <h3>More Information</h3>
+            <p>In today's fast-paced business landscape, effective inventory management is paramount for ensuring operational efficiency and maintaining a competitive edge. StockDash, an advanced Inventory Management System (IMS), emerges as the ultimate solution to address the complexities and challenges associated with inventory control and optimization. With its comprehensive suite of features and intuitive interface, StockDash revolutionizes the way businesses manage their inventory-related processes, offering a streamlined and efficient approach to inventory management.</p>
+          <p>Our project offers a multitude of advantages that make it indispensable for businesses across industries. Firstly, the system's robust product management module enables businesses to efficiently categorize and organize their products, ensuring easy access and retrieval. The administrative capabilities of StockDash empower administrators with full control over the system, including user management, configuration settings, and comprehensive reporting tools. Furthermore, StockDash streamlines the order management process, from order capture to fulfillment, enhancing order accuracy and reducing processing times.</p>
+          <p>The store management functionality of StockDash allows businesses to easily add, edit, and manage store details, including addresses, contact information, and operating hours. With StockDash's monitoring capabilities, businesses gain valuable insights into product performance, inventory levels, and sales trends through interactive dashboards and customizable reports. Additionally, the system facilitates seamless customer management and support, enabling businesses to store customer details, track interactions, and provide personalized support efficiently.</p>
+          <p>StockDash serves as a game-changer in the realm of inventory management, offering businesses a comprehensive solution to their inventory-related challenges. By streamlining processes, providing actionable insights, and enhancing operational efficiency, StockDash empowers businesses to optimize their inventory management practices and stay ahead in today's competitive market landscape. With StockDash as your trusted partner, your business can unlock new levels of productivity, cost savings, customer satisfaction, drive sustainable growth and success in the long run.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="footer">
+          <span>
+            Created By <a href="#">Alfas B, Neeraj J, Abhishek S</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+  );
+  };
+
+export default LandingPage;
